@@ -1,0 +1,2 @@
+# MINISHIFT DEPLOYER
+bash run.sh
