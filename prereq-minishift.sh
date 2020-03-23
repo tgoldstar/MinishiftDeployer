@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing packages"
-sudo apt install qemu-kvm libvirt-daemon libvirt-daemon-system -y -q
+sudo apt install qemu-kvm libvirt-daemon libvirt-daemon-system -y -q --reinstall
 echo "Adding user to libvirt group"
 sudo usermod -a -G libvirt $(whoami)
 echo "Setting the new session"
