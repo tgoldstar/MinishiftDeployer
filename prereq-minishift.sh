@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Setting up default ubuntu sources list"
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo cp ./sources.list /etc/apt/sources.list
+sudo apt update -q
 echo "Installing packages"
 sudo apt install qemu-kvm libvirt-daemon libvirt-daemon-system -y -q --reinstall
 echo "Adding user to libvirt group"
